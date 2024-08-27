@@ -1,0 +1,203 @@
+:root{
+    --color-blue: #3C3D37;
+    --color-celeste: #86AB89;
+    --color-gris: #E7FBE6;
+    --color-blanco: #CBE2B5;
+    --color-plomo: #495057;
+
+    --color--background: var(--color-celeste);
+
+    /* Tamaño base de fuente */
+    font-size: 16px; /* 1rem = 16px */
+}
+
+body{
+    background: var(--color--background);
+    font-family: "Inter", sans-serif;
+}
+
+textarea{
+    font-family: "Inter", sans-serif;
+}
+
+/*Header*/
+.header{
+    width: 90%;
+    margin: auto;
+}
+
+.header__logo{
+    margin-top: 2.5rem; /* 40px -> 2.5rem */
+}
+
+/*Main*/
+.main{
+    width: 75%;
+    margin: auto 2.5rem auto auto; /* 40px -> 2.5rem */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 5.69rem - 4.5rem); /* 91px -> 5.69rem, 72px -> 4.5rem */
+    align-items: end;
+}
+
+/*left*/
+.left{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ingreso__texto{
+    width: 80%;
+    font-size: 2rem; /* 32px -> 2rem */
+    color: var(--color-blue);
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.ingreso__texto::placeholder{
+    color: var(--color-blue);
+}
+
+
+.left__info{
+    font-size: 0.75rem; /* 12px -> 0.75rem */
+    color: var(--color-plomo);
+}
+
+.left__botones{
+    display: flex;
+    gap: 1.5rem; /* 24px -> 1.5rem */
+    margin-top: 1rem; /* 16px -> 1rem */
+    flex-wrap: wrap;
+}
+.boton__encriptar,
+.boton__desencriptar,
+.boton__copiar{
+    border: 1px solid var(--color-blue);
+    cursor: pointer;
+    max-width: 20.5rem; /* 328px -> 20.5rem */
+    min-width: 10rem; /* 160px -> 10rem */
+    width: 40%;
+    height: 4.19rem; /* 67px -> 4.19rem */
+    font-size: 1rem; /* 16px -> 1rem */
+    border-radius: 1.5rem; /* 24px -> 1.5rem */
+}
+.boton__encriptar{
+    background-color: var(--color-blue);
+    color: var(--color-blanco);
+    border: none;
+}    
+
+
+.boton__desencriptar{
+    background-color: var(--color-gris);
+    color: var(--color-blue);
+}
+
+.right{
+    background-color: var(--color-blanco);
+    height: calc(100% + 3rem); /* 48px -> 3rem */
+    border-radius: 2rem; /* 32px -> 2rem */
+    padding: 2rem; /* 32px -> 2rem */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem; /* 32px -> 2rem */
+    align-items: center;
+    box-shadow: 0px 1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.08); /* 24px 32px 8px -> 1.5rem 2rem 0.5rem */
+}
+
+.right.ajustar{
+    justify-content: space-between;
+}
+
+.muchacho{
+    width: 100%;
+}
+
+.oculto{
+    display: none;
+} 
+
+.mensaje__final{
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem; /* 24px -> 1.5rem */
+}
+
+.mensaje__final.ajustar{
+    text-align: left;
+    font-weight: lighter;
+    height: 80%;
+}
+
+.right__info{
+    color: var(--color-plomo);
+    font-size: 1rem; /* 16px -> 1rem */
+    text-align: center;
+}
+
+.boton__copiar{
+    width: 100%;
+    display: none;
+    background: transparent;
+    color: var(--color-blue);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-blue);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 0.9375rem 0; /* 15px -> 0.9375rem */
+    font-size: 0.875rem; /* 14px -> 0.875rem */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 2.5rem; /* 40px -> 2.5rem */
+    }
+    .left__botones{
+        justify-content: center;
+    }
+    .boton__encriptar,
+    .boton__desencriptar{
+        width: 45%;
+    }
+    .right{
+        height: 100%;
+    }
+    .muchacho{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main{
+        margin: none;
+    }
+    .boton__encriptar,
+    .boton__desencriptar{
+        max-width: none;
+        width: 100%;
+    }
+}
