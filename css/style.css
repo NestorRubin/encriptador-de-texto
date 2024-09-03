@@ -181,8 +181,9 @@ textarea{
     margin: 0;
 }*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .main{
+        justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: 75% auto;
         width: auto;
@@ -202,7 +203,7 @@ textarea{
         display: none;
     }
 }
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
     .main{
         margin: none;
     }
@@ -211,4 +212,4 @@ textarea{
         max-width: none;
         width: 100%;
     }
-}
+}*/
