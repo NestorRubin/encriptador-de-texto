@@ -154,7 +154,7 @@ textarea{
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: var(--color-blue);
     color: var(--color-blanco);
     text-align: center;
@@ -166,9 +166,9 @@ footer {
     left: 0;
 }
 
-footer p {
+/*footer p {
     margin: 0;
-}
+}*/
 
 @media screen and (max-width: 800px) {
     .main{
