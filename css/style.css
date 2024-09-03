@@ -11,9 +11,20 @@
     font-size: 16px; /* 1rem = 16px */
 }
 
-body{
+/*body{
     background: var(--color--background);
     font-family: "Inter", sans-serif;
+}*/
+
+body {
+    background: #333 url(https://img.freepik.com/foto-gratis/papel-tapiz-juegos-3d-abstracto-colorido-negro-dorado-bordes-afilados_1409-4821.jpg?w=1380&t=st=1725344132~exp=1725344732~hmac=bf037146fdd3e4fd876b156bc97a6309f511221afdce51f6bc66b46665af08ff) repeat; /* Ruta de imagen correcta */
+    font-family: "Inter", sans-serif;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 0; }
 }
 
 textarea{
