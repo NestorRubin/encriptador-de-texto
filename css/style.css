@@ -1,9 +1,9 @@
 :root{
-    --color-blue: #3C3D37;
+    --color-blue: #d5f052;
     --color-celeste: #86AB89;
-    --color-gris: #E7FBE6;
-    --color-blanco: #CBE2B5;
-    --color-plomo: #495057;
+    --color-gris: #ee8c30;
+    --color-blanco: #bd4a3b;
+    --color-plomo: #5ae9ee;
 
     --color--background: var(--color-celeste);
 
@@ -202,6 +202,9 @@ textarea{
     }
     .muchacho{
         display: none;
+    }
+    .footer{
+        position: relative;
     }
 }
 /*@media screen and (max-width: 500px) {
