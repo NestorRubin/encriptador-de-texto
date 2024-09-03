@@ -49,6 +49,7 @@ textarea{
     grid-template-columns: 2fr 1fr;
     min-height: calc(100vh - 5.69rem - 4.5rem); /* 91px -> 5.69rem, 72px -> 4.5rem */
     align-items: end;
+    padding: 2rem;
 }
 
 /*left*/
@@ -172,9 +173,9 @@ textarea{
     padding: 0.9375rem 0; /* 15px -> 0.9375rem */
     font-size: 0.875rem; /* 14px -> 0.875rem */
     width: 100%;
-    position: fixed;
+    /*position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0;*/
 }
 
 /*footer p {
